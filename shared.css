@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "generalFont";
+    src: url("./fonts/Omnes.ttf");
+}
+
+
+body{
+    font-family: "generalFont";
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.8rem;
+}
+
+/* /* ==============================================================================*/
+/* BOTH / MOBILE FIRST  */
+/* ================================================================================= */
+
+
+/***! the nav bar  */
+
+
+header{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 0rem 20px ;
+    background:white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #c51b82;
+    
+}
+
+
+.logo{
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+/***! website banner*/
+
+.website-banner{
+    background: url("./images/Meer_Website_bannerMobile.jpg");
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+
+/***! about */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content:center ;
+    padding: 0rem 1rem;
+    background: #f1f1f1;
+   
+}
+
+
+
+.about-para h1{
+    color: #c51b82;
+    font-size: 2.5rem;
+}
+
+.about-graph{
+    width: 100%;
+    max-width: 605px;
+}
+
+.about-graph img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/***! root cause */
+
+.root-cause{
+    width: 80%;
+    margin-top: 1rem;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.root-cause h1{
+    color: #c51b82;
+}
+
+.root-cause-para{
+    width: 100%;
+}
+
+.root-cause-logos{
+    
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". ."
+                         ". ."
+                         ". ."
+                         ". .";
+
+    
+}
+
+.root-cause-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 0.5rem;
+}
+
+.logo-info{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.logo-percentage-value{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #96d3d5;
+    margin: 0.5rem;
+}
+
+
+/***! WHY section*/
+
+.why-section{
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70vh;
+    background-color: black;
+    background-image: url("./root-Cause-image/WomenAndMenSymbol3.svg");
+    background-size: 10rem;
+    background-position: top 20% right;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.why-section-info{
+    color: white;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    font-size: 1rem;
+    
+    
+}
+
+.why-section h2{
+    font-size: 2rem;
+}
+.why-section h1{
+    font-size: 2.5rem;
+}
+
+/***! other factor*/
+
+.other-factor h1{
+    text-align: center;
+}
+
+.other-factor-cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other-factor-card{
+    flex-shrink: 0;
+    background: #5acad41a;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5);;
+    margin-bottom: 1.5rem;
+    padding:  1rem 0.5rem;
+    width: 80%;
+    min-height: 20rem;
+}
+
+
+/***! change*/
+
+.change{
+   
+    background: linear-gradient(to top,rgba(0, 0, 0,0.6),rgba(0,0,0,0.4) ), url("./images/homeParra.jpg");
+    color: white;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.2rem;
+
+}
+
+.change-info{
+    padding: 1rem;
+    width: 100%;
+    margin: auto auto;
+}
+
+.change-info h1{
+    color: #c51b82;
+}
+
+/***! approach */
+
+.approach{
+    padding: 1rem;
+}
+
+.approach-info{
+    max-width: 40rem;
+}
+
+.approach-info h1{
+    color: #c51b82;
+    
+}
+
+
+
+.approach-grids{
+    display: grid;
+    grid-template-areas: ". ."
+                         ". .";
+    grid-gap: 0.5rem;
+    
+}
+
+.approach-grid{
+    box-shadow: 1px 1px 6px 0 #0003;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    min-height: 10rem;
+}
+
+
+
+.learn-more a{
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding:1rem 2rem;
+    background: #c51b82;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.learn-more a:hover{
+    background: #96d3d5;
+
+}
+
+/***! sign up form */
+
+.sign-up-form{
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sign-up-form div{
+    margin-top: 10px;
+}
+
+.form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 3rem;
+    max-width: 50rem;
+    
+}
+
+.form input{
+    border: 1.5px solid black;
+    font-family: inherit;
+    font-size: inherit;
+    padding:0.5rem
+}
+
+
+.form input:focus{
+    outline: none;
+    background: #f1f1f1;
+    
+}
+
+
+
+
+.subscribe-button {
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    background: #c51b82;
+}
+
+.subscribe-button:hover{
+    background: #96d3d5;
+}
+
+.copyright-info{
+    margin: auto;
+    max-width: 580px;
+    font-size: 0.8rem;
+}
+
+/***! footer*/
+
+.footer{
+    padding:3rem;
+    color: #949494;
+    background:#242424;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.footer h1{
+    text-align: center;
+    font-size: 2rem;
+    color:#c51b82;
+   
+    
+}
+
+.footer-logo{
+    text-align: center;
+}
+
+
+
+
+.footer-link{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    text-align: center;
+    grid-gap: 1rem;
+
+}
+
+.footer-link a{
+    color:inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color:#c51b82
+}
+
+.footer-svgs{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.footer-svgs a{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.footer-svgs svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+/* ================================================================================= */
+/* ONLY MOBILE  */
+/* ================================================================================= */
+
+/***! the nav bar  */
+
+
+.mobile__link__container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.more__button{
+    margin-left: 1rem;
+    padding: 1rem 1.5rem;
+    background: #d43d98;
+    font-weight: 700;
+    color: white;
+}
+
+.mobile__link__container a{
+    text-decoration: none;
+}
+
+.more__button:hover,
+.more__button:active{
+    background-color: #96d3d5;
+    color: white;
+    
+}
+
+
+
+/* ================================================================================= */
+/* ONLY DESKTOP */
+/* ================================================================================= */
+
+/***! the nav bar */
+
+.link__container{
+    display: none;
+    margin-left: auto;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+.link__container a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.link{
+    margin-left: 2rem;
+}
+
+
+.link a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.link a:hover{
+    color: #c51b82;
+}
+
+.main-button{
+    padding: 1rem;
+    background: #c51b82;
+}
+
+.main-button:hover{
+    background-color: #96d3d5;
+}
+
+.main-button a{
+    color: white;
+}
+
+.main-button a:hover{
+    color: white;
+}
+
+
+
+/* ================================================================================= */
+/* MEDIA QUERY */
+/* ================================================================================= */
+
+
+@media(min-width: 38rem){
+    .website-banner{
+        background: url("./images/Meer_Website_banner.jpg");
+        height: 65vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .why-section{
+        background-size: 20rem;
+    }
+
+    .other-factor h1{
+        margin-left: 4rem;
+        text-align: left;
+    }
+
+
+    .other-factor-cards{
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2rem;
+       
+    }
+    
+    .other-factor-card{
+      
+        background: #5acad41a;
+        box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5);
+        padding:  1rem 0.5rem;
+        margin-left: 2rem;
+        width: 40%;
+    }
+
+    
+    
+}
+
+
+
+@media(min-width: 48rem){
+
+    .website-banner{
+        background: url("./images/Meer_Website_banner.jpg");
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .root-cause{
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+        
+        padding: 0.5rem;
+    }
+
+    .root-cause-logos{
+        
+        grid-template-areas: ". . . ."
+                             ". . . .";
+        margin-left: 0;
+
+        grid-gap: 2rem;
+
+    }
+
+    .root-cause-para{
+        width: 80%;
+    }
+
+    .why-section{
+        padding: 2rem 5rem;
+        height: 80vh;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url("./root-Cause-image/WomenAndMenSymbol3.svg");
+        background-size: 20rem;
+        background-position: top 50px right;
+        background-repeat: no-repeat;
+    
+    }
+
+    .other-factor-cards{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: row;
+        margin: 2rem;
+       
+    }
+    
+    .other-factor-card{
+      
+        background: #5acad41a;
+        box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5);
+        padding:  1rem 0.5rem;
+        margin-left: 2rem;
+        width: 30%;
+    }
+
+
+    .change{
+   
+        background-attachment: fixed;
+       
+    
+    
+    }
+    
+    .change-info{
+        
+        width: 70%;
+     
+    }
+
+    .change-info h1{
+        font-size: 2.5rem;
+    }
+
+
+    
+    .approach-grids{
+        align-items: stretch;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+
+        
+    }
+
+    .approach-grid{
+        height: 12rem;
+    }
+    
+    .approach{
+        padding: 1rem 3rem;
+    }
+
+    .learn-more a{
+        margin-top: 1rem;
+        
+    }
+
+        
+    .footer{
+        padding:5rem 0rem;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .footer h1{
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    
+
+    .footer-info{
+        width: 40%;
+    }
+
+
+
+    .footer-link{
+        display: grid;
+        text-align: left;
+        grid-gap: 1rem;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .footer-svgs{
+        justify-content: flex-start;
+    }
+
+
+    
+    
+    
+    
+}
+
+
+
+
+@media(min-width:60rem){
+    .mobile__link__container{
+        display: none;
+    }
+    
+    .link__container{
+        display: flex;
+    }
+
+    header{
+        padding: 0rem 4rem;
+    }
+
+    .website-banner{
+        background: url("./images/Meer_Website_banner.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .about-para{
+        text-align: left;
+        padding: 0.5rem;
+    }
+
+    .about-graph{
+        width: 50%;
+    }
+
+    .about-para{
+        width: 40%;
+    }
+
+    .why-section{
+        padding: 2rem 10rem;
+        align-items: center;
+        height: 85vh;
+        justify-content: flex-start;
+        background-image: url("./root-Cause-image/WomenAndMenSymbol3.svg");
+        background-size: 30rem;
+        background-position: top 50px right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+
+
+    
+}
